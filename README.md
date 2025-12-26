@@ -40,8 +40,9 @@ accelerate launch --multi_gpu --mixed_precision "fp16" train.py
 --image_encoder_path= <image encoder path>
 --train_batch_size= <batch size>
 --output_dir= <save weight directory>
---save_steps= 
 --controlnet_model_path= <controlnet model path>
 --data_root_path= <PatternFasion Dataset path>
-
 ```
+
+#Acknowledgements
+Our work is highly inspired by [IP-Adapter](https://github.com/tencent-ailab/IP-Adapter) and [Multimodal Garment Designer](https://github.com/aimagelab/multimodal-garment-designer). Thanks for their great works!
