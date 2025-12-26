@@ -43,6 +43,10 @@ accelerate launch --multi_gpu --mixed_precision "fp16" train.py
 --controlnet_model_path= <controlnet model path>
 --data_root_path= <PatternFasion Dataset path>
 ```
+Once training is complete, you can convert the weights.
+```bash
+python ./weight/weight_process.py
+```
 
 # Acknowledgements
 Our work is highly inspired by [IP-Adapter](https://github.com/tencent-ailab/IP-Adapter) and [Multimodal Garment Designer](https://github.com/aimagelab/multimodal-garment-designer). Thanks for their great works!
