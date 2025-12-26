@@ -2,19 +2,19 @@
 
 ```
 PatternFasion
-  -- dresscode/
+   --dresscode/
       --pattern
       --texture
       --dresscode.json
       --test_dresscode.text
       --train_dresscode.text
-  -- vitonhd/
+   --vitonhd/
       --pattern
       --texture
       --vitonhd.json
       --test_vitonhd.text
       --train_vitonhd.text
-  -- streettryon/
+   --streettryon/
       --pattern
       --texture
       --streettryon.json
