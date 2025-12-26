@@ -44,5 +44,5 @@ accelerate launch --multi_gpu --mixed_precision "fp16" train.py
 --data_root_path= <PatternFasion Dataset path>
 ```
 
-#Acknowledgements
+# Acknowledgements
 Our work is highly inspired by [IP-Adapter](https://github.com/tencent-ailab/IP-Adapter) and [Multimodal Garment Designer](https://github.com/aimagelab/multimodal-garment-designer). Thanks for their great works!
