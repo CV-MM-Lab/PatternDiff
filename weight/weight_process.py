@@ -8,7 +8,7 @@ def parse_args():
     parser.add_argument(
         "--input_model_dir",
         type=str,
-        default='./weight/checkpoint-10',
+        default='./weight/checkpoint',
     )
     parser.add_argument(
         "--save_model_dir",

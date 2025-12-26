@@ -486,9 +486,3 @@ if __name__ == "__main__":
     torch.backends.cudnn.benchmark = False
     torch.backends.cudnn.deterministic = True
     main()
-
-
-'''
-accelerate launch --multi_gpu --mixed_precision "fp16" --main_process_port 29502 ./train.py --pretrained_model_name_or_path="../stable-diffusion-inpainting"  --image_encoder_path="../PatternDiff/image_encoder" --resolution=512  --train_batch_size=3  --dataloader_num_workers=10 --learning_rate=1e-04  --weight_decay=0.01  --output_dir="./weight"  --save_steps=10 --controlnet_model_path="../control_v11p_sd15_openpose" --data_root_path='/home/ys/Desktop/ys/patternfashion/' 
-
-'''
