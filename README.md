@@ -33,7 +33,7 @@ PatternFasion/
       --train_streettryon.text
 ```
 ## Train
-The pretrained mode can be downloaded from this [Link](https://huggingface.co/booksforcharlie/stable-diffusion-inpainting). And The controlnet mode can be downloaded the this [Link](https://huggingface.co/lllyasviel/control_v11p_sd15_openpose)
+The pretrained mode can be downloaded from this [Link](https://huggingface.co/booksforcharlie/stable-diffusion-inpainting). And The controlnet mode can be downloaded the this [Link].(https://huggingface.co/lllyasviel/control_v11p_sd15_openpose)
 ```bash
 accelerate launch --multi_gpu --mixed_precision "fp16" train.py
 --pretrained_model_name_or_path= <stable diffusion inpainting model path>
