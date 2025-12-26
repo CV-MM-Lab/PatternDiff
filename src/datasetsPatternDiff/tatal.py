@@ -98,7 +98,7 @@ class FashionPatternDataset(data.Dataset):
                     self.captions_dict = {k: v for k, v in self.captions_dict.items()}
                     self.captions_dict_total['vitonhd'] = self.captions_dict
                 elif ca == 'streettryon':
-                    with open(os.path.join(os.path.join(self.dataset_paths,ca),'streetryon.json')) as f:
+                    with open(os.path.join(os.path.join(self.dataset_paths,ca),'streettryon.json')) as f:
                         self.captions_dict = json.load(f)
                     self.captions_dict = {k: v for k, v in self.captions_dict.items()}
                     self.captions_dict_total['streettryon'] = self.captions_dict
