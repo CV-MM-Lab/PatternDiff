@@ -39,7 +39,7 @@ accelerate launch --multi_gpu --mixed_precision "fp16" train.py
 --pretrained_model_name_or_path= <stable diffusion inpainting model path>
 --image_encoder_path= <image encoder path>
 --train_batch_size= <batch size>
---output_dir= <save weight directory>
+--output_dir= './weight'
 --controlnet_model_path= <controlnet model path>
 --data_root_path= <PatternFasion Dataset path>
 ```
