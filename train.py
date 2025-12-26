@@ -100,7 +100,7 @@ def parse_args():
     parser.add_argument(
         "--pretrained_model_name_or_path",
         type=str,
-        default=None,
+        default='../stable-diffusion-inpainting',
         required=True,
         help="Path to pretrained model or model identifier from huggingface.co/models.",
     )
@@ -110,13 +110,7 @@ def parse_args():
         default=None,
         help="Path to pretrained ip adapter model. If not specified weights are initialized randomly.",
     )
-    # parser.add_argument(
-    #     "--data_json_file",
-    #     type=str,
-    #     default=None,
-    #     required=True,
-    #     help="Training data",
-    #)
+
     parser.add_argument(
         "--data_root_path",
         type=str,
@@ -171,12 +165,12 @@ def parse_args():
     parser.add_argument("--weight_decay", type=float, default=1e-2, help="Weight decay to use.")
     parser.add_argument("--num_train_epochs", type=int, default=800)
     parser.add_argument(
-        "--train_batch_size", type=int, default=8, help="Batch size (per device) for the training dataloader."
+        "--train_batch_size", type=int, default=3, help="Batch size (per device) for the training dataloader."
     )
     parser.add_argument(
         "--dataloader_num_workers",
         type=int,
-        default=0,
+        default=10,
         help=(
             "Number of subprocesses to use for data loading. 0 means that the data will be loaded in the main process."
         ),
@@ -184,7 +178,7 @@ def parse_args():
     parser.add_argument(
         "--save_steps",
         type=int,
-        default=2000,
+        default=10000,
         help=(
             "Save a checkpoint of the training state every X updates"
         ),
@@ -192,7 +186,7 @@ def parse_args():
     parser.add_argument(
         "--mixed_precision",
         type=str,
-        default=None,
+        default="fp16",
         choices=["no", "fp16", "bf16"],
         help=(
             "Whether to use mixed precision. Choose between fp16 and bf16 (bfloat16). Bf16 requires PyTorch >="
