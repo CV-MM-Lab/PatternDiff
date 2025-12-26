@@ -5,12 +5,12 @@
 conda env create -f environment.yml
 ```
 ## Inference
-You can download the model weight from this Link.
+You can download the model weight from this [Link](https://huggingface.co/YSYS1103/PatternDiff).
 ```bash
 python demo.py --input_ckpt <model weight path>
 ```
 ## PatternFasion Dataset
-First, it is required to download three datasets: [DressCode](https://github.com/aimagelab/dress-code), [VITON-HD](https://github.com/shadow2496/VITON-HD) and [StreetTryOn](https://github.com/cuiaiyu/street-tryon-benchmark). Note that only the upper body category data from the DressCode dataset is needed, and the file shall be renamed as dresscode. All other annotation data should be downloaded from this link. The data format of the dataset is shown below.
+First, it is required to download three datasets: [DressCode](https://github.com/aimagelab/dress-code), [VITON-HD](https://github.com/shadow2496/VITON-HD) and [StreetTryOn](https://github.com/cuiaiyu/street-tryon-benchmark). Note that only the upper body category data from the DressCode dataset is needed, and the file shall be renamed as dresscode. All other annotation data should be downloaded from this [Link](https://huggingface.co/datasets/YSYS1103/PatternFashion). The data format of the dataset is shown below.
 ```
 PatternFasion/
    --dresscode/
