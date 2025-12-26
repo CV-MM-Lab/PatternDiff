@@ -1,7 +1,6 @@
 # PatternDiff
-
+## PatternFasion Dataset
 ```
-PatternFasion/
    --dresscode/
       --pattern/
       --texture/
@@ -20,5 +19,4 @@ PatternFasion/
       --streettryon.json
       --test_streettryon.text
       --train_streettryon.text
-
 ```
