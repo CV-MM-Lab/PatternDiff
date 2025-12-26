@@ -35,16 +35,13 @@ PatternFasion/
 ## Train
 The pretrained mode can be downloaded from this [Link](https://huggingface.co/booksforcharlie/stable-diffusion-inpainting). And The controlnet mode can be downloaded the this [Link](https://huggingface.co/lllyasviel/control_v11p_sd15_openpose)
 ```bash
-accelerate launch --multi_gpu --mixed_precision "fp16" --main_process_port 29501 train.py
+accelerate launch --multi_gpu --mixed_precision "fp16" train.py
 --pretrained_model_name_or_path= <stable diffusion inpainting model path>
---image_encoder_path="image encoder path"
---resolution=512
+--image_encoder_path= <image encoder path>
 --train_batch_size= <batch size>
---learning_rate=1e-04
---weight_decay=0.01
 --output_dir= <save weight directory>
 --save_steps= 
---controlnet_model_path= <controlnet model path>"../control_v11p_sd15_openpose"
---data_root_path='/home/ys/Desktop/ys/patternfashion/'
+--controlnet_model_path= <controlnet model path>
+--data_root_path= <PatternFasion Dataset path>
 
 ```
