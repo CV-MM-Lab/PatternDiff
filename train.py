@@ -236,7 +236,6 @@ def main():
     text_encoder = CLIPTextModel.from_pretrained(args.pretrained_model_name_or_path, subfolder="text_encoder",torch_dtype=torch.float16)
     vae = AutoencoderKL.from_pretrained(args.pretrained_model_name_or_path, subfolder="vae",torch_dtype=torch.float16)
     image_encoder = CLIPVisionModelWithProjection.from_pretrained(args.image_encoder_path)
-    x = torch.load('../stable-diffusion-inpainting/unet/diffusion_pytorch_model.fp16.bin')
     x = torch.load(os.path.join(args.pretrained_model_name_or_path,'unet','diffusion_pytorch_model.fp16.bin'))
     config = UNet2DConditionModel.load_config(args.pretrained_model_name_or_path, subfolder="unet")
     unet = UNet2DConditionModel.from_config(config)
