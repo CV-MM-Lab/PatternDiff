@@ -9,6 +9,7 @@ You can download the model weight from this [Link](https://huggingface.co/YSYS11
 ```bash
 python demo.py --input_ckpt <model weight path>
 ```
+<--!
 ## PatternFasion Dataset
 First, it is required to download three datasets: [DressCode](https://github.com/aimagelab/dress-code), [VITON-HD](https://github.com/shadow2496/VITON-HD) and [StreetTryOn](https://github.com/cuiaiyu/street-tryon-benchmark). Note that only the upper body category data from the DressCode dataset is needed, and the file shall be renamed as dresscode. All other annotation data should be downloaded from this [Link](https://huggingface.co/datasets/YSYS1103/PatternFashion). The data format of the dataset is shown below.
 ```
@@ -47,6 +48,6 @@ Once training is complete, you can convert the weights.
 ```bash
 python ./weight/weight_process.py
 ```
-
+-->
 # Acknowledgements
 Our work is highly inspired by [IP-Adapter](https://github.com/tencent-ailab/IP-Adapter) and [Multimodal Garment Designer](https://github.com/aimagelab/multimodal-garment-designer). Thanks for their great works!
